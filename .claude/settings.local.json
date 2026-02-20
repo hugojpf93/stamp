@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc:*)",
+      "Bash(node --version:*)",
+      "Bash(npm --version:*)",
+      "Bash(npm create:*)",
+      "Bash(printf:*)",
+      "Bash(npx --yes @quick-start/create-electron@latest:*)",
+      "Bash(npx electron-vite dev:*)",
+      "Bash(npx electron-vite:*)",
+      "Bash(timeout:*)",
+      "Bash(node:*)",
+      "Bash(taskkill:*)",
+      "Bash(cmd.exe /c \"taskkill /PID 22292 /F\")",
+      "Bash(netstat:*)",
+      "Bash(cmd.exe /c \"taskkill /IM node.exe /F & taskkill /IM electron.exe /F\")",
+      "Bash(cmd.exe /c \"taskkill /PID 22292 /T /F\")",
+      "Bash(cmd.exe:*)",
+      "Bash(npm run build:win:*)",
+      "Bash(npx tsc:*)",
+      "Bash(git add:*)",
+      "Bash(npm run build:*)",
+      "Bash(ls:*)",
+      "Bash(npm view:*)",
+      "Bash(npx eslint:*)",
+      "Bash(npx vitest run)",
+      "Bash(npx prettier:*)",
+      "Bash(npm audit:*)",
+      "Bash(npm install:*)",
+      "Bash(npm ls:*)",
+      "Bash(git config:*)"
+    ]
+  }
+}
