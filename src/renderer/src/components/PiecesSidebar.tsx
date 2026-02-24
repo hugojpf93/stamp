@@ -2,7 +2,8 @@ import React, { useMemo, useState, useCallback, useRef, useEffect } from 'react'
 import { Document, Page, pdfjs } from 'react-pdf'
 import type { PieceDocument } from '../types'
 
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`
+import pdfjsWorkerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url'
+pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorkerUrl
 
 interface PiecesSidebarProps {
   pieces: PieceDocument[]

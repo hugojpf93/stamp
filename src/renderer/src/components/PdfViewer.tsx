@@ -3,8 +3,9 @@ import { Document, Page, pdfjs } from 'react-pdf'
 import 'react-pdf/dist/Page/AnnotationLayer.css'
 import 'react-pdf/dist/Page/TextLayer.css'
 
-// Configurer le worker pdf.js via CDN (evite les problemes de chemins avec espaces)
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`
+// Worker pdf.js embarqué localement (pas de CDN, fonctionne hors-ligne)
+import pdfjsWorkerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url'
+pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorkerUrl
 
 interface PdfViewerProps {
   pdfBuffer: Uint8Array
